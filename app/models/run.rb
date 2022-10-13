@@ -1,4 +1,5 @@
 class Run < ApplicationRecord
+
     belongs_to :user 
     validates :distance, presence: true
     
@@ -7,7 +8,9 @@ class Run < ApplicationRecord
             run.total_time
         end
     end
+
     def self.search(hr) 
         self.where('average_heartrate > ?', hr)
     end
+    
 end
