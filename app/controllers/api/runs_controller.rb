@@ -3,7 +3,7 @@ class Api::RunsController < ApplicationController
     def index 
         
         if user 
-            render json: user.runs.all 
+            render json: user.runs.all, status: :ok 
         else
             render json: {error: ["Not authorized"]}, status: :unauthorized 
         end
@@ -12,7 +12,7 @@ class Api::RunsController < ApplicationController
     def show 
         run = user.runs.find_by(id: params[:id])
         if run 
-            render json: run 
+            render json: run, status: :ok 
         else
             render json: {error: "Not found"}, status: :unauthorized 
         end 
@@ -41,7 +41,7 @@ class Api::RunsController < ApplicationController
         run = user.runs.find_by(id: params[:id])
         if run 
             run.destroy
-            render json: {success: "Run deleted"} 
+            render json: {success: "Run deleted"}, status: :ok 
         else
             render json: {error: "Run not found."}, status: :not_found 
         end
@@ -56,16 +56,22 @@ class Api::RunsController < ApplicationController
             render json: {error: ["Enter some run data to find your fastest mile so far."]}, status: :not_found 
         end
     end
+
+
     def longest_run 
         run = Run.longest_run 
-        render json: run 
+        render json: run, status: :ok 
     end
+
     def find_heartrate 
         runs = Run.search(params[:average_heartrate])
         user_runs = runs.where(user_id: user.id)
-        render json: user_runs 
+        render json: user_runs , status: :ok
     end
-    private 
+
+
+    private
+    
     def user 
         User.find_by(id: session[:user_id])
     end
