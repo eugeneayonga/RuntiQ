@@ -12,6 +12,7 @@ import LinkedIn from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import "./App.css";
 
+
 const theme = createTheme({
   palette: {
     primary: {
@@ -25,6 +26,7 @@ const theme = createTheme({
     },
   },
 });
+
 
 function App() {
   const [user, setUser] = useState(null);
@@ -42,6 +44,7 @@ function App() {
     });
   }, []);
 
+
   const logout = () => {
     setUser(null);
     setLoggedIn(false);
@@ -55,12 +58,9 @@ function App() {
             <UserHome user={user} logout={logout} />
           ) : (
             <div className="landingPage">
-              <h1>Run Data Tracker</h1>
-              <h4>
-                Welcome! You can use this app to track your run progress. Enter
-                data for each workout you do, then find your results!
-              </h4>
-              <img src="https://images.unsplash.com/photo-1533240332313-0db49b459ad6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fHJ1bm5pbmd8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"></img>
+              <h1>Runtly</h1>
+              <h4>Welcome to Runtly! Your one stop app for tracking your running sessions.</h4>
+              <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fin.pinterest.com%2Fpin%2F262968065725261291%2F&psig=AOvVaw3CnFQU1IqXpckX5-XAZC09&ust=1665755563144000&source=images&cd=vfe&ved=0CAkQjRxqFwoTCPia8Zut3foCFQAAAAAdAAAAABAH"></img>
               <Login setUser={setUser} />
               <Signup setUser={setUser} />
             </div>
@@ -69,12 +69,12 @@ function App() {
         <hr></hr>
         <footer style={{ textAlign: "center" }}>
           <p className="footerText">
-            Questions about the app?
+            Got Questions?
             <a
               className="bloglinks"
               target="_blank"
               rel="noreferrer"
-              href="mailto:pfohman.sarah@gmail.com"
+              href="mailto:eugeneayonga@gmail.com"
             >
               <MailOutlineIcon className="footerIcon" />
             </a>
@@ -82,12 +82,12 @@ function App() {
 
           <br />
           <p className="footerText">
-            Check out other projects:{" "}
+            GitHub:{" "}
             <a
               className="bloglinks"
               target="_blank"
               rel="noreferrer"
-              href="https://github.com/spfohman"
+              href="https://github.com/eugeneayonga"
             >
               <GitHubIcon className="footerIcon" />
             </a>
@@ -100,7 +100,7 @@ function App() {
               className="bloglinks"
               target="_blank"
               rel="noreferrer"
-              href="https://www.linkedin.com/in/sarah-pfohman-998a8246/"
+              href="www.linkedin.com/in/eugeneayonga"
             >
               <LinkedIn className="footerIcon" />
             </a>
@@ -110,4 +110,6 @@ function App() {
     </ThemeProvider>
   );
 }
+
+
 export default App;
