@@ -59,7 +59,7 @@ function App() {
           ) : (
             <div className="landingPage">
               <h1>Runtly</h1>
-              <h4>Welcome to Runtly! Your one stop app for tracking your running sessions.</h4>
+              <h4>Welcome to Runtly! Your one stop app for tracking running sessions.</h4>
               <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fin.pinterest.com%2Fpin%2F262968065725261291%2F&psig=AOvVaw3CnFQU1IqXpckX5-XAZC09&ust=1665755563144000&source=images&cd=vfe&ved=0CAkQjRxqFwoTCPia8Zut3foCFQAAAAAdAAAAABAH"></img>
               <Login setUser={setUser} />
               <Signup setUser={setUser} />
