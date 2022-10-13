@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     resources :runs, only: [:index, :show, :create, :update, :destroy]
 
     resources :users
+
     get '/fastest-mile', to: 'runs#fastest_mile'
     # get '/most-runs', to: 'users#most_runs'
     # get '/most-runs-1', to: 'users#most_runs_1'
