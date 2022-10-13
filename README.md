@@ -15,4 +15,9 @@ Runtly is a one stop web application for tracking running sessions. It is built 
 
 ## Live example
 
-The completed site can be viewed [here](https://github.com/eugeneayonga/RuntiQ)
+The completed site can be viewed [here](https://runtiq.herokuapp.com/)
+
+## Entity Relationship Diagram
+
+![RuntlyERD](https://user-images.githubusercontent.com/64194654/195693304-cc362f7e-49ff-4c31-8f48-29fd45d4c3ee.png)
+
