@@ -1,9 +1,11 @@
 class Api::UsersController < ApplicationController
     skip_before_action :authorize, only: :create
+
     def index 
         users = User.all 
-        render json: users
+        render json: users, status: :ok
     end
+
     def create 
         user  = User.create(user_params)
         if user.valid?
@@ -17,21 +19,26 @@ class Api::UsersController < ApplicationController
     def show
         user = User.find_by(id: session[:user_id])
         if user 
-            render json: user 
+            render json: user, status: :ok 
         else
             render json: {error: ["Not authorized"]}, status: :unauthorized 
         end
     end
+
     def most_runs 
         user = User.most_runs
-        render json: user
+        render json: user, status: :ok
     end
+
     def most_runs_1 
         user = User.count(:run)
-        render json: user
+        render json: user, status: :ok
     end
-    private 
+
+    private
+
     def user_params 
         params.permit(:username, :password, :password_confirmation)
     end
+
 end
