@@ -15,6 +15,7 @@ function Home({ user }) {
         }
       });
   }, []);
+
   const errorPs = mileError.map((e) => (
     <p key={e} className="errors">
       {e}
@@ -39,4 +40,6 @@ function Home({ user }) {
     </div>
   );
 }
+
+
 export default Home;
