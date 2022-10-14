@@ -21,3 +21,13 @@ The completed site can be viewed [here](https://runtiq.herokuapp.com/)
 
 ![RuntlyERD](https://user-images.githubusercontent.com/64194654/195693304-cc362f7e-49ff-4c31-8f48-29fd45d4c3ee.png)
 
+## Screenshots
+
+![Runtly1](https://user-images.githubusercontent.com/64194654/195767872-4dd9d751-826b-41e1-b7d7-c503bf26662f.png)
+
+![Runtly2](https://user-images.githubusercontent.com/64194654/195767928-94222c6a-33f9-46e2-beb5-ff6b80e0cc33.png)
+
+![Runtly3](https://user-images.githubusercontent.com/64194654/195768009-3eef75a7-41b8-4280-a0e0-7d5bb7f5b702.png)
+
+![Runtly4](https://user-images.githubusercontent.com/64194654/195768071-1f86dbc2-1b85-4ba4-ab94-da7be83619ad.png)
+
