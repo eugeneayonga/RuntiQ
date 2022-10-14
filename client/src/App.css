@@ -62,7 +62,7 @@ footer {
   bottom: 0;
   width: 100%;
   line-height: 0em;
-  background-color: rgb(176, 243, 243);
+  background-color: rgb(44, 44, 143);
   text-align: center;
 }
 .footerIcon {
@@ -122,7 +122,7 @@ img {
   text-align: center;
   top: 0;
   padding-top: 0px;
-  background-color: rgb(176, 243, 243);
+  background-color: rgb(39, 39, 129);
 }
 
 .runForm {
