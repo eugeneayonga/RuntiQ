@@ -34,4 +34,6 @@ function NavBar({ logout }) {
     </>
   );
 }
+
+
 export default NavBar;
