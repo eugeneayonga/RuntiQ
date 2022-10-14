@@ -4,6 +4,7 @@ import AddRun from "./AddRun";
 import FindData from "./FindData";
 import Home from "./Home";
 import { Route } from "react-router-dom";
+
 function UserHome({ user, logout }) {
   const [runs, setRuns] = useState([]);
   const [sortBy, setSortBy] = useState("fastest_split");
@@ -15,6 +16,7 @@ function UserHome({ user, logout }) {
         setRuns(data);
       });
   }, []);
+
   useEffect(() => {
     const sorted = [...runs].sort((run1, run2) => {
       if (run1[sortBy] > run2[sortBy]) {
@@ -39,6 +41,7 @@ function UserHome({ user, logout }) {
     });
     setRuns(runToUpdate);
   }
+
   function handleFavoriteRun(favoriteRun) {
     const runToUpdate = runs.map((run) => {
       if (run.id === favoriteRun.id) {
@@ -71,4 +74,6 @@ function UserHome({ user, logout }) {
     </div>
   );
 }
+
+
 export default UserHome;
