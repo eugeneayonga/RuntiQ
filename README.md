@@ -31,3 +31,7 @@ The completed site can be viewed [here](https://runtiq.herokuapp.com/)
 
 ![Runtly4](https://user-images.githubusercontent.com/64194654/195768071-1f86dbc2-1b85-4ba4-ab94-da7be83619ad.png)
 
+
+## License
+
+The app is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
